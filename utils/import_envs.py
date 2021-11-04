@@ -1,3 +1,5 @@
+import active_soccer_vision.envs
+
 try:
     import pybullet_envs  # pytype: disable=import-error
 except ImportError:
