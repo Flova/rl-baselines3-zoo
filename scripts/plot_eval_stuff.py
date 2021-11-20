@@ -60,7 +60,7 @@ df = pd.DataFrame({"Metric": channel,
                   "Trial": conc})
 
 g = sns.barplot(x="Trial", y="Confidence", hue="Metric", data=df, ci=None)
-g.set_xticklabels(g.get_xticklabels(), rotation=45)
+g.set_xticklabels(g.get_xticklabels(), rotation=45, ha="right")
 
 
 num = len(df["Trial"]) // 2
